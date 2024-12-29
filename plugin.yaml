@@ -1,0 +1,141 @@
+plugin:
+    name: 'hts.mall::lang.plugin.name'
+    description: 'hts.mall::lang.plugin.description'
+    author: 'Hts GmbH'
+    icon: oc-icon-shopping-cart
+    homepage: ''
+navigation:
+    mall-orders:
+        label: 'hts.mall::lang.common.orders'
+        url: hts/mall/orders
+        iconSvg: plugins/hts/mall/assets/images/orders-icon.svg
+        order: 801
+        permissions:
+            - 'hts.mall.*'
+        sideMenu:
+            mall-orders:
+                label: 'hts.mall::lang.common.orders'
+                url: hts/mall/orders
+                icon: icon-check-circle
+                permissions:
+                    - hts.mall.manage_orders
+            mall-discounts:
+                label: 'hts.mall::lang.common.discounts'
+                url: hts/mall/discounts
+                icon: icon-gift
+                permissions:
+                    - hts.mall.manage_discounts
+            mall-payment-log:
+                label: 'hts.mall::lang.common.payments'
+                url: hts/mall/paymentlogs
+                icon: icon-money
+                permissions:
+                    - hts.mall.manage_payment_log
+    mall-catalogue:
+        label: 'hts.mall::lang.common.catalogue'
+        url: hts/mall/products
+        iconSvg: plugins/hts/mall/assets/images/catalogue-icon.svg
+        order: 800
+        permissions:
+            - hts.mall.manage_products
+        sideMenu:
+            mall-products:
+                label: 'hts.mall::lang.common.products'
+                url: hts/mall/products
+                icon: icon-cart-plus
+                permissions:
+                    - hts.mall.manage_products
+            mall-reviews:
+                label: 'hts.mall::lang.common.reviews'
+                url: hts/mall/reviews
+                icon: icon-star-half-full
+                permissions:
+                    - hts.mall.manage_reviews
+            mall-services:
+                label: 'hts.mall::lang.common.services'
+                url: hts/mall/services
+                icon: icon-plus-circle
+                permissions:
+                    - hts.mall.manage_services
+            mall-categories:
+                label: 'hts.mall::lang.common.categories'
+                url: hts/mall/categories
+                icon: icon-sitemap
+                permissions:
+                    - hts.mall.manage_categories
+            mall-brands:
+                label: 'hts.mall::lang.common.brands'
+                url: hts/mall/brands
+                icon: icon-cube
+                permissions:
+                    - hts.mall.manage_brands
+            mall-properties:
+                label: 'hts.mall::lang.common.properties'
+                url: hts/mall/propertygroups
+                icon: icon-tags
+                permissions:
+                    - hts.mall.manage_properties
+permissions:
+    hts.mall.manage_products:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_products'
+    hts.mall.manage_categories:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_categories'
+    hts.mall.manage_orders:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_orders'
+    hts.mall.manage_discounts:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_discounts'
+    hts.mall.settings.manage_general:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.settings.manage_general'
+    hts.mall.settings.manage_payment_gateways:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.settings.manage_payment_gateways'
+    hts.mall.settings.manage_currency:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.settings.manage_currency'
+    hts.mall.settings.manage_payment_methods:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.settings.manage_payment_methods'
+    hts.mall.manage_properties:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_properties'
+    hts.mall.manage_customer_groups:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_customer_groups'
+    hts.mall.manage_notifications:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_notifications'
+    hts.mall.manage_price_categories:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_price_categories'
+    hts.mall.manage_order_states:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_order_states'
+    hts.mall.manage_shipping_methods:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_shipping_methods'
+    hts.mall.manage_customer_addresses:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_customer_addresses'
+    hts.mall.manage_payment_log:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_payment_log'
+    hts.mall.manage_feeds:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_feeds'
+    hts.mall.manage_wishlists:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_wishlists'
+    hts.mall.manage_services:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_services'
+    hts.mall.manage_reviews:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_reviews'
+    hts.mall.manage_brands:
+        tab: 'hts.mall::lang.plugin.name'
+        label: 'hts.mall::lang.permissions.manage_brands'
